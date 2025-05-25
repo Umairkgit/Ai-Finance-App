@@ -9,6 +9,7 @@ const isProtectedRoute = createRouteMatcher([
 
 const aj = arcjet({
   key: process.env.ARCJET_KEY,
+  defaultDeadline: 3000, //This is new line
   rules: [
     shield({
       mode: "LIVE",
