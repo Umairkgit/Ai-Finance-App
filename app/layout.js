@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import Header from "@/components/header";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "sonner";
+import { FaHandHoldingHeart } from "react-icons/fa";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,8 +30,9 @@ export default function RootLayout({ children }) {
 
           {/* footer */}
           <footer className="bg-blue-50 py-12">
-            <div className="container mx-auto px-4 text-center text-gray-600">
+            <div className="container flex gap-3 justify-center mx-auto px-4 text-center text-gray-600">
               <p>Made with love</p>
+              <FaHandHoldingHeart />
             </div>
           </footer>
         </body>
